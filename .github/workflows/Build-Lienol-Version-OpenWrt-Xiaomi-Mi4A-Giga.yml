@@ -94,7 +94,7 @@ jobs:
         make defconfig
         make download -j8 V=s
         echo -e "ls -la ~/openwrt/dl"
-        ls -la ./dl
+        ls -lah ./dl
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
 
